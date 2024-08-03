@@ -33,7 +33,15 @@ canvas{
     bottom: 0;
     -webkit-perspective: 1200px;
     perspective: 1200px;
-    transition: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    z-index: 10;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .card:hover{
@@ -186,6 +194,7 @@ canvas{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .custom-controls {
@@ -212,3 +221,128 @@ button {
     padding: 5px 10px;
 }
 
+.balloons {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.balloons.show {
+    display: block;
+}
+
+.balloon {
+    position: absolute;
+    bottom: -100px;
+    width: 100px;
+    animation: float 5s linear infinite; /* Durasi animasi dipercepat */
+    pointer-events: auto;
+}
+
+.balloon:nth-child(1) {
+    left: 5%;
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+
+.balloon:nth-child(2) {
+    left: 15%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.balloon:nth-child(3) {
+    left: 25%;
+    animation-duration: 5.5s;
+    animation-delay: 2s;
+}
+
+.balloon:nth-child(4) {
+    left: 35%;
+    animation-duration: 6.5s;
+    animation-delay: 1.5s;
+}
+
+.balloon:nth-child(5) {
+    left: 45%;
+    animation-duration: 5.2s;
+    animation-delay: 2.5s;
+}
+
+.balloon:nth-child(6) {
+    left: 55%;
+    animation-duration: 5.8s;
+    animation-delay: 1s;
+}
+
+.balloon:nth-child(7) {
+    left: 65%;
+    animation-duration: 5.3s;
+    animation-delay: 2s;
+}
+
+.balloon:nth-child(8) {
+    left: 75%;
+    animation-duration: 5.7s;
+    animation-delay: 1.5s;
+}
+
+.balloon:nth-child(9) {
+    left: 85%;
+    animation-duration: 6.2s;
+    animation-delay: 2s;
+}
+
+.balloon:nth-child(10) {
+    left: 95%;
+    animation-duration: 5.9s;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.warning p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.warning button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.warning button:hover {
+    background-color: #ff2875;
+}

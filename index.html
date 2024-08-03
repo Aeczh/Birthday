@@ -15,7 +15,11 @@
             <button id="mute-unmute">Mute</button>
         </div>
     </div>
-    <div class="card">
+    <div id="warning" class="warning">
+        <p>Please start the music to enjoy the fireworks and balloons!</p>
+        <button id="start-music">Start Music</button>
+    </div>
+    <div id="card-container" class="card">
         <div class="outside">
             <div class="front">
                 <p>Happy Birthday</p>
@@ -40,8 +44,25 @@
         </div>
     </div>
 
-    <canvas id="Canvas"></canvas>
-    <!-- <script src="app.js"></script> -->
+    <div id="balloons-container" class="balloons">
+        <img src="img/ballon1.svg" alt="Balloon 1" class="balloon">
+        <img src="img/ballon2.svg" alt="Balloon 2" class="balloon">
+        <img src="img/ballon3.svg" alt="Balloon 3" class="balloon">
+        <img src="img/ballon1.svg" alt="Balloon 1" class="balloon">
+        <img src="img/ballon2.svg" alt="Balloon 2" class="balloon">
+        <img src="img/ballon3.svg" alt="Balloon 3" class="balloon">
+        <img src="img/ballon1.svg" alt="Balloon 1" class="balloon">
+        <img src="img/ballon2.svg" alt="Balloon 2" class="balloon">
+        <img src="img/ballon3.svg" alt="Balloon 3" class="balloon">
+        <img src="img/ballon1.svg" alt="Balloon 1" class="balloon">
+        <img src="img/ballon2.svg" alt="Balloon 2" class="balloon">
+        <img src="img/ballon3.svg" alt="Balloon 3" class="balloon">
+    </div>
+
+    <div id="fireworks-container">
+        <canvas id="Canvas"></canvas>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
