@@ -240,7 +240,7 @@ button {
     position: absolute;
     bottom: -100px;
     width: 100px;
-    animation: float 5s linear infinite; /* Durasi animasi dipercepat */
+    animation: float 5s linear infinite; 
     pointer-events: auto;
 }
 
@@ -319,7 +319,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     color: white;
     display: flex;
     flex-direction: column;
