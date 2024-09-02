@@ -331,12 +331,13 @@ button {
 
 .balloon-image {
   position: absolute;
-  bottom: 0; 
+  bottom: -200px; 
   animation: float-slow 10s linear infinite; 
   pointer-events: auto;
   width: 150px; 
   height: 150px; 
   object-fit: cover;
+  border-radius: 100%;
 }
 
 .balloon-image:nth-child(1) {
@@ -403,7 +404,7 @@ button {
 
 @keyframes float-slow {
   0% {
-      transform: translateY(0px) rotate(-10deg);
+      transform: translateY(0px) rotate(-30deg);
   }
   100% {
       transform: translateY(-150vh) rotate(60deg);
