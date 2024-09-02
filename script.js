@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animation Elements
     const fireworksContainer = document.getElementById('fireworks-container');
     const balloonsContainer = document.getElementById('balloons-container');
+    const imageContainer = document.getElementById('image-container');
     const cardContainer = document.getElementById('card-container');
     const candleWish = document.getElementById('candle-wish');
     const flame = document.getElementById('flame');
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fireworksContainer.style.display = 'block';
             setTimeout(() => {
                 balloonsContainer.classList.add('show');
+                imageContainer.classList.add('show');
                 setTimeout(() => {
                     cardContainer.classList.add('show');
                 }, 7000); // Delay for card appearance after balloons
