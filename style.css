@@ -341,54 +341,105 @@ button {
 }
 
 .balloon-image:nth-child(1) {
-  left: 10%;
+  left: 1%;
   animation-delay: 0s;
 }
 
 .balloon-image:nth-child(2) {
-  left: 20%;
-  animation-delay: 1s;
+  left: 5%;
+  animation-delay: 2s;
 }
 
 .balloon-image:nth-child(3) {
-  left: 30%;
-  animation-delay: 2s;
+  left: 13%;
+  animation-delay: .5s;
 }
 
 .balloon-image:nth-child(4) {
-  left: 40%;
-  animation-delay: 1.5s;
+  left: 13%;
+  animation-delay: 3.5s;
 }
 
 .balloon-image:nth-child(5) {
-  left: 50%;
-  animation-delay: 2.5s;
-}
-
-.balloon-image:nth-child(6) {
-  left: 60%;
-  animation-delay: 1s;
-}
-
-.balloon-image:nth-child(7) {
-  left: 70%;
-  animation-delay: 3s;
-}
-
-.balloon-image:nth-child(8) {
-  left: 80%;
+  left: 23%;
   animation-delay: 1.5s;
 }
 
+.balloon-image:nth-child(6) {
+  left: 26%;
+  animation-delay: 3s;
+}
+
+.balloon-image:nth-child(7) {
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.balloon-image:nth-child(8) {
+  left: 38%;
+  animation-delay: 2.6s;
+}
+
 .balloon-image:nth-child(9) {
-  left: 90%;
-  animation-delay: 2s;
+  left: 40%;
+  animation-delay: 1.01s;
 }
 
 .balloon-image:nth-child(10) {
-  left: 95%;
+  left: 50%;
+  animation-delay: 0s;
+}
+
+.balloon-image:nth-child(11) {
+  left: 50%;
+  animation-delay: 3s;
+}
+
+.balloon-image:nth-child(12) {
+  left: 66%;
+  animation-delay: 0s;
+}
+
+.balloon-image:nth-child(13) {
+  left: 60%;
+  animation-delay: 1.4s;
+}
+
+.balloon-image:nth-child(14) {
+  left: 63%;
+  animation-delay: 3s;
+}
+
+.balloon-image:nth-child(15) {
+  left: 74%;
+  animation-delay: 3.5s;
+}
+
+.balloon-image:nth-child(16) {
+  left: 75%;
   animation-delay: 1s;
 }
+
+.balloon-image:nth-child(17) {
+  left: 80%;
+  animation-delay: 2.3s;
+}
+
+.balloon-image:nth-child(18) {
+  left: 85%;
+  animation-delay: 0s;
+}
+
+.balloon-image:nth-child(19) {
+  left: 90%;
+  animation-delay: 3s;
+}
+
+.balloon-image:nth-child(20) {
+  left: 90%;
+  animation-delay: 1.5s;
+}
+
 
 @keyframes float {
   0% {
@@ -407,7 +458,7 @@ button {
       transform: translateY(0px) rotate(-30deg);
   }
   100% {
-      transform: translateY(-150vh) rotate(60deg);
+      transform: translateY(-150vh) rotate(10deg);
   }
 }
 
